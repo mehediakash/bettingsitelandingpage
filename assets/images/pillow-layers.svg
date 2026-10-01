@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="layer3Grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4338ca"/>
+      <stop offset="100%" stop-color="#312e81"/>
+    </linearGradient>
+    <linearGradient id="layer2Grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#818cf8"/>
+      <stop offset="100%" stop-color="#6366f1"/>
+    </linearGradient>
+    <linearGradient id="layer1Grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#e2e8f0"/>
+    </linearGradient>
+    <filter id="layerShadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="12" stdDeviation="14" flood-color="#0f172a" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <!-- Layer 1: Washable Bamboo Silk Fabric Cover -->
+  <g filter="url(#layerShadow)" transform="translate(60, 40)">
+    <path d="M 40 40 L 440 40 L 390 110 L -10 110 Z" fill="url(#layer1Grad)" stroke="#cbd5e1" stroke-width="2"/>
+    <text x="460" y="70" font-family="'Hind Siliguri', 'Segoe UI', sans-serif" font-size="15" font-weight="700" fill="#1e1b4b">১. প্রিমিয়াম বাঁশ ফাইবার কভার</text>
+    <text x="460" y="92" font-family="'Hind Siliguri', 'Segoe UI', sans-serif" font-size="13" fill="#64748b">সহজে খোলা ও ধোয়া যায়, অ্যান্টি-ব্যাকটেরিয়াল</text>
+  </g>
+
+  <!-- Layer 2: Breathable Inner Protective Sleeve -->
+  <g filter="url(#layerShadow)" transform="translate(60, 140)">
+    <path d="M 40 40 L 440 40 L 390 110 L -10 110 Z" fill="url(#layer2Grad)" opacity="0.9"/>
+    <text x="460" y="70" font-family="'Hind Siliguri', 'Segoe UI', sans-serif" font-size="15" font-weight="700" fill="#1e1b4b">২. ডাস্ট-মাইট প্রটেক্টিভ লাইনার</text>
+    <text x="460" y="92" font-family="'Hind Siliguri', 'Segoe UI', sans-serif" font-size="13" fill="#64748b">ধুলোবালি ও জীবাণু থেকে সুরক্ষিত রাখে</text>
+  </g>
+
+  <!-- Layer 3: High Density Zero-Pressure Memory Foam Core -->
+  <g filter="url(#layerShadow)" transform="translate(60, 240)">
+    <path d="M 40 40 L 440 40 L 390 110 L -10 110 Z" fill="url(#layer3Grad)"/>
+    <text x="460" y="70" font-family="'Hind Siliguri', 'Segoe UI', sans-serif" font-size="15" font-weight="700" fill="#1e1b4b">৩. জিরো-প্রেসার মেমরি ফোম কোর</text>
+    <text x="460" y="92" font-family="'Hind Siliguri', 'Segoe UI', sans-serif" font-size="13" fill="#64748b">ঘাড়ের শেপ অনুযায়ী অ্যাডজাস্ট হয়, ৫ বছর দীর্ঘস্থায়ী</text>
+  </g>
+</svg>

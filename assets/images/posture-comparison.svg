@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 340" width="100%" height="100%">
+  <defs>
+    <filter id="pCard" x="-5%" y="-5%" width="110%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <!-- Left: Bad Posture / Ordinary Pillow -->
+  <g transform="translate(30, 20)" filter="url(#pCard)">
+    <rect width="305" height="300" rx="16" fill="#fff1f2" stroke="#fecdd3" stroke-width="1.5"/>
+    <circle cx="45" cy="45" r="16" fill="#ffe4e6"/>
+    <path d="M38 38 L52 52 M52 38 L38 52" stroke="#e11d48" stroke-width="2.5" stroke-linecap="round"/>
+    <text x="75" y="45" font-family="'Hind Siliguri', 'Segoe UI', sans-serif" font-size="16" font-weight="700" fill="#9f1239">সাধারণ বা তুলার বালিশ</text>
+    <text x="75" y="65" font-family="'Hind Siliguri', 'Segoe UI', sans-serif" font-size="13" fill="#be123c">ভুল বাঁকে ঘাড়ে মারাত্মক চাপ</text>
+
+    <!-- Visual Head & Curved Spine -->
+    <circle cx="100" cy="150" r="32" fill="#fda4af"/>
+    <!-- Bent Spine Line (Red curved) -->
+    <path d="M 132 150 Q 180 185 260 170" fill="none" stroke="#e11d48" stroke-width="6" stroke-linecap="round" stroke-dasharray="6,4"/>
+    <!-- Ordinary flat collapsed pillow -->
+    <rect x="60" y="180" width="120" height="30" rx="8" fill="#e2e8f0"/>
+
+    <rect x="25" y="235" width="255" height="48" rx="8" fill="#ffffff" opacity="0.9"/>
+    <text x="35" y="255" font-family="'Hind Siliguri', 'Segoe UI', sans-serif" font-size="13" font-weight="600" fill="#881337">❌ সকালে তীব্র ঘাড় ও কাঁধ ব্যথা</text>
+    <text x="35" y="273" font-family="'Hind Siliguri', 'Segoe UI', sans-serif" font-size="12" fill="#9f1239">❌ নাক ডাকা ও ঘন ঘন ঘুম ভেঙে যাওয়া</text>
+  </g>
+
+  <!-- Right: Correct Posture / SleepWell Pro -->
+  <g transform="translate(365, 20)" filter="url(#pCard)">
+    <rect width="305" height="300" rx="16" fill="#f0fdf4" stroke="#bbf7d0" stroke-width="1.5"/>
+    <circle cx="45" cy="45" r="16" fill="#dcfce7"/>
+    <path d="M37 45 L43 51 L53 39" fill="none" stroke="#16a34a" stroke-width="2.5" stroke-linecap="round"/>
+    <text x="75" y="45" font-family="'Hind Siliguri', 'Segoe UI', sans-serif" font-size="16" font-weight="700" fill="#14532d">SleepWell Pro™ মেমরি ফোম</text>
+    <text x="75" y="65" font-family="'Hind Siliguri', 'Segoe UI', sans-serif" font-size="13" fill="#15803d">ন্যাচারাল স্পাইনাল অ্যালাইনমেন্ট</text>
+
+    <!-- Visual Head & Straight Spine -->
+    <circle cx="100" cy="145" r="32" fill="#86efac"/>
+    <!-- Perfectly straight aligned spine line (Green) -->
+    <path d="M 132 145 L 260 145" fill="none" stroke="#16a34a" stroke-width="6" stroke-linecap="round"/>
+    <!-- SleepWell Pro ergonomic contour pillow -->
+    <path d="M 60 170 C 60 155, 90 150, 120 160 C 150 170, 180 160, 180 185 L 60 185 Z" fill="#6366f1" opacity="0.8"/>
+
+    <rect x="25" y="235" width="255" height="48" rx="8" fill="#ffffff" opacity="0.9"/>
+    <text x="35" y="255" font-family="'Hind Siliguri', 'Segoe UI', sans-serif" font-size="13" font-weight="600" fill="#14532d">✔ মেরুদণ্ড ও ঘাড় থাকে সম্পূর্ণ সোজা</text>
+    <text x="35" y="273" font-family="'Hind Siliguri', 'Segoe UI', sans-serif" font-size="12" fill="#15803d">✔ নাক ডাকা বন্ধ করে সাউন্ড স্লিপ নিশ্চিত করে</text>
+  </g>
+</svg>

@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 480" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4f46e5" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#f59e0b" stop-opacity="0.06"/>
+    </linearGradient>
+    <linearGradient id="pillowGrad" x1="0%" y1="15%" x2="90%" y2="85%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="45%" stop-color="#f8fafc"/>
+      <stop offset="80%" stop-color="#e2e8f0"/>
+      <stop offset="100%" stop-color="#cbd5e1"/>
+    </linearGradient>
+    <linearGradient id="grooveGrad" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#e2e8f0" stop-opacity="0.8"/>
+      <stop offset="60%" stop-color="#cbd5e1" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#94a3b8" stop-opacity="0.6"/>
+    </linearGradient>
+    <linearGradient id="meshSide" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#4338ca"/>
+    </linearGradient>
+    <linearGradient id="goldAcc" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#fbbf24"/>
+    </linearGradient>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="24" stdDeviation="28" flood-color="#1e1b4b" flood-opacity="0.22"/>
+    </filter>
+    <filter id="badgeShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <!-- Ambient Glow Background -->
+  <circle cx="350" cy="240" r="220" fill="url(#bgGlow)"/>
+
+  <!-- Pillow Shadow Base -->
+  <ellipse cx="350" cy="380" rx="270" ry="38" fill="#0f172a" opacity="0.16" filter="blur(16px)"/>
+
+  <!-- Main Pillow Outer Contour (3D Ergonomic Butterfly Cervical Shape) -->
+  <g filter="url(#softShadow)">
+    <!-- Base Pillow Body -->
+    <path d="M 120 220 
+             C 120 160, 200 130, 350 145 
+             C 500 130, 580 160, 580 220 
+             C 590 290, 560 360, 480 365 
+             C 410 370, 380 340, 350 340 
+             C 320 340, 290 370, 220 365 
+             C 140 360, 110 290, 120 220 Z" 
+          fill="url(#pillowGrad)" stroke="#cbd5e1" stroke-width="2"/>
+
+    <!-- 3D Side Mesh Breathable Panel (Purple Indigo Airflow Fabric) -->
+    <path d="M 120 220 
+             C 110 290, 140 360, 220 365 
+             C 200 345, 145 285, 140 235 
+             C 135 195, 130 205, 120 220 Z" 
+          fill="url(#meshSide)" opacity="0.85"/>
+          
+    <path d="M 580 220 
+             C 590 290, 560 360, 480 365 
+             C 500 345, 555 285, 560 235 
+             C 565 195, 570 205, 580 220 Z" 
+          fill="url(#meshSide)" opacity="0.85"/>
+
+    <!-- Side ventilation mesh dots -->
+    <g fill="#ffffff" opacity="0.4">
+      <circle cx="150" cy="270" r="2.5"/><circle cx="160" cy="265" r="2.5"/><circle cx="170" cy="275" r="2.5"/>
+      <circle cx="155" cy="290" r="2.5"/><circle cx="165" cy="285" r="2.5"/><circle cx="175" cy="295" r="2.5"/>
+      <circle cx="550" cy="270" r="2.5"/><circle cx="540" cy="265" r="2.5"/><circle cx="530" cy="275" r="2.5"/>
+      <circle cx="545" cy="290" r="2.5"/><circle cx="535" cy="285" r="2.5"/><circle cx="525" cy="295" r="2.5"/>
+    </g>
+
+    <!-- Ergonomic Cervical Central Groove (Cradle for Head & Neck) -->
+    <path d="M 260 215 
+             C 260 170, 440 170, 440 215 
+             C 440 270, 390 295, 350 295 
+             C 310 295, 260 270, 260 215 Z" 
+          fill="url(#grooveGrad)"/>
+
+    <!-- Subtle Ergonomic Contour Lines (Silk Soft Sheen) -->
+    <path d="M 230 180 C 300 200, 400 200, 470 180" fill="none" stroke="#ffffff" stroke-width="4" stroke-linecap="round" opacity="0.7"/>
+    <path d="M 220 280 C 280 320, 420 320, 480 280" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" opacity="0.6"/>
+    
+    <!-- Delicate Bamboo Texture Leaves / Emboss pattern -->
+    <path d="M 330 225 C 340 215, 360 215, 370 225 C 360 235, 340 235, 330 225 Z" fill="#ffffff" opacity="0.5"/>
+    <path d="M 350 215 L 350 235" stroke="#cbd5e1" stroke-width="1.5" opacity="0.4"/>
+  </g>
+
+  <!-- Floating Feature Floating Pill Badge 1: Slow Rebound -->
+  <g filter="url(#badgeShadow)" transform="translate(60, 110)">
+    <rect width="190" height="52" rx="26" fill="#ffffff" stroke="#e0e7ff" stroke-width="1.5"/>
+    <circle cx="28" cy="26" r="16" fill="#eef2ff"/>
+    <path d="M22 26 L26 30 L34 22" fill="none" stroke="#4f46e5" stroke-width="2.5" stroke-linecap="round"/>
+    <text x="54" y="23" font-family="'Hind Siliguri', 'Segoe UI', sans-serif" font-size="13" font-weight="700" fill="#1e1b4b">৫-সেকেন্ড স্লো রিবাউন্ড</text>
+    <text x="54" y="39" font-family="'Hind Siliguri', 'Segoe UI', sans-serif" font-size="11" font-weight="500" fill="#64748b">১০০% পিওর মেমরি ফোম</text>
+  </g>
+
+  <!-- Floating Feature Floating Pill Badge 2: Cervical Spine Support -->
+  <g filter="url(#badgeShadow)" transform="translate(440, 90)">
+    <rect width="200" height="52" rx="26" fill="#ffffff" stroke="#fef3c7" stroke-width="1.5"/>
+    <circle cx="28" cy="26" r="16" fill="#fffbeb"/>
+    <path d="M 28 17 C 28 22, 24 25, 28 30 C 32 35, 28 38, 28 38" fill="none" stroke="#d97706" stroke-width="2.5" stroke-linecap="round"/>
+    <text x="54" y="23" font-family="'Hind Siliguri', 'Segoe UI', sans-serif" font-size="13" font-weight="700" fill="#78350f">সার্ভাইকাল স্পাইন সাপোর্ট</text>
+    <text x="54" y="39" font-family="'Hind Siliguri', 'Segoe UI', sans-serif" font-size="11" font-weight="500" fill="#b45309">ঘাড় ব্যথায় তাৎক্ষণিক স্বস্তি</text>
+  </g>
+
+  <!-- Floating Feature Floating Pill Badge 3: 100% Breathable -->
+  <g filter="url(#badgeShadow)" transform="translate(450, 340)">
+    <rect width="190" height="50" rx="25" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
+    <circle cx="26" cy="25" r="15" fill="#ecfdf5"/>
+    <path d="M 21 28 Q 26 20 31 28" fill="none" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
+    <path d="M 26 17 L 26 23" fill="none" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
+    <text x="50" y="22" font-family="'Hind Siliguri', 'Segoe UI', sans-serif" font-size="13" font-weight="700" fill="#065f46">শীতল ও বায়ুচলাচলযুক্ত</text>
+    <text x="50" y="38" font-family="'Hind Siliguri', 'Segoe UI', sans-serif" font-size="11" font-weight="500" fill="#047857">ঘামহীন গভীর ঘুম</text>
+  </g>
+</svg>
