@@ -11,14 +11,14 @@ document.addEventListener("DOMContentLoaded", () => {
   // --- Pricing Configuration ---
   const PRICING = {
     single: {
-      name: "১টি অর্থোপেডিক পিলো",
-      price: 1490,
-      regularPrice: 2290,
+      name: "১টি বই (সাফল্য ও আত্মউন্নয়ন)",
+      price: 450,
+      regularPrice: 650,
     },
     combo: {
-      name: "২টি অর্থোপেডিক পিলো (ফ্যামিলি কম্বো)",
-      price: 2790,
-      regularPrice: 4580,
+      name: "২টি বই (গিফট কম্বো প্যাক)",
+      price: 850,
+      regularPrice: 1300,
     },
     shipping: {
       insideDhaka: 70,
@@ -183,7 +183,7 @@ document.addEventListener("DOMContentLoaded", () => {
         if (!targetId) return;
 
         // Smooth scroll to top for Home link
-        if (targetId === "#" || targetId === "#top") {
+        if (targetId === "#" || targetId === "#top" || targetId === "#home") {
           e.preventDefault();
           window.scrollTo({
             top: 0,
@@ -331,7 +331,7 @@ document.addEventListener("DOMContentLoaded", () => {
         selectPackage(pkgKey);
 
         // Smooth scroll to order section
-        const orderSection = document.getElementById("order-form-section");
+        const orderSection = document.getElementById("order") || document.getElementById("order-form-section");
         if (orderSection) {
           const header = document.querySelector(".header");
           const offset = header ? header.offsetHeight + 16 : 80;
@@ -571,7 +571,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // -------------------------------------------------------------------------
   const initStickyCta = () => {
     const stickyBar = document.querySelector(".mobile-sticky-bar");
-    const orderSection = document.getElementById("order-form-section");
+    const orderSection = document.getElementById("order") || document.getElementById("order-form-section");
 
     if (!stickyBar || !orderSection) return;
 
