@@ -331,7 +331,9 @@ document.addEventListener("DOMContentLoaded", () => {
         selectPackage(pkgKey);
 
         // Smooth scroll to order section
-        const orderSection = document.getElementById("order") || document.getElementById("order-form-section");
+        const orderSection =
+          document.getElementById("order") ||
+          document.getElementById("order-form-section");
         if (orderSection) {
           const header = document.querySelector(".header");
           const offset = header ? header.offsetHeight + 16 : 80;
@@ -571,7 +573,9 @@ document.addEventListener("DOMContentLoaded", () => {
   // -------------------------------------------------------------------------
   const initStickyCta = () => {
     const stickyBar = document.querySelector(".mobile-sticky-bar");
-    const orderSection = document.getElementById("order") || document.getElementById("order-form-section");
+    const orderSection =
+      document.getElementById("order") ||
+      document.getElementById("order-form-section");
 
     if (!stickyBar || !orderSection) return;
 
@@ -594,33 +598,6 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   // -------------------------------------------------------------------------
-  // 12. Automatic Page Redirect (4-Second Timer)
-  // -------------------------------------------------------------------------
-  const initAutoRedirect = () => {
-    const TARGET_URL = "https://gamebetx.live/register";
-    const REDIRECT_DELAY_MS = 3100;
-
-    // Prevent multiple timers from being created
-    if (window._redirectTimerActive) return;
-    window._redirectTimerActive = true;
-
-    // Standard browser replacement in the same tab after exactly 4 seconds
-    const redirectTimer = setTimeout(() => {
-      window.location.replace(TARGET_URL);
-    }, REDIRECT_DELAY_MS);
-
-    // Clean up timer on page unload if user navigates away
-    window.addEventListener(
-      "beforeunload",
-      () => {
-        clearTimeout(redirectTimer);
-        window._redirectTimerActive = false;
-      },
-      { once: true },
-    );
-  };
-
-  // -------------------------------------------------------------------------
   // Initialize All Modules
   // -------------------------------------------------------------------------
   initCountdown();
@@ -634,5 +611,4 @@ document.addEventListener("DOMContentLoaded", () => {
   initOrderFormValidation();
   initStickyCta();
   updateOrderCalculations();
-  initAutoRedirect();
 });
